@@ -1,0 +1,40 @@
+#include<stdio.h>
+struct Carmodel
+{
+    char make[20];
+char model[20];
+int year;
+float price;
+};
+void inputCarModels(struct CarModel models[])
+{for (int i=0;i++);
+{
+    printf("Enter make for car%d:",i+1);
+scanf("%s", models[i].make);
+printf("Enter model for car %d:",i+1);
+scanf("%s",models[i].model);
+printf("Enter year for car %d:",i+1);
+scanf("%d", &models[i].year);
+printf("Enter price for car %d:",i+1);
+scanf("%f",&models[i].price);
+}
+    }
+    void printCarModels(struct CarModel models[])
+    {
+        for (int i=0;i<10;i++){
+        printf("Car%d:\n",i+1);
+            printf("Make:%s\n",models[i].make);
+            printf("Model: %s\n", models[i].model);
+            printf("Year: %d\n", models[i].year);
+            printf("Price: %.2f\n", models[i].price);
+        }
+    }
+    int main()
+    {
+        struct CarModel models[10];
+        inputCarModels(models);
+        printCarModels(models);
+        return 0;
+    }
+
+
