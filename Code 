@@ -1,5 +1,5 @@
 #include<stdio.h>
-struct Carmodel
+struct CarModel
 {
     char make[20];
 char model[20];
@@ -7,7 +7,7 @@ int year;
 float price;
 };
 void inputCarModels(struct CarModel models[])
-{for (int i=0;i++);
+{for (int i=0;i++;)
 {
     printf("Enter make for car%d:",i+1);
 scanf("%s", models[i].make);
@@ -36,5 +36,6 @@ scanf("%f",&models[i].price);
         printCarModels(models);
         return 0;
     }
+
 
 
